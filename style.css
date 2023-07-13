@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:tan;
+}
+
+.board {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  color: slateblue;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.mole {
+  width: 150px;
+  height: 150px;
+  background-image: url('./mole-animal-clipart-xl-removebg-preview.png');
+  background-size: contain;
+  animation: appear 0.9s;
+}
+
+@keyframes appear {
+  0% {
+      transform: translateY(130px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
